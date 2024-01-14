@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.MainActivity">
+
+    <!-- Top Section -->
+    <LinearLayout
+        android:id="@+id/topSection"
+        style="@style/LinearLayout"
+        android:padding="8dp"
+        android:orientation="vertical" >
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/appName"
+            style="@style/AppName" />
+
+        <!-- Search Bar with Custom Icon -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white" >
+
+            <EditText
+                android:id="@+id/searchBar"
+                style="@style/SearchEditText" />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                style="@style/SearchIcon" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- RecyclerView for Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        style="@style/RecyclerView" />
+
+    <!-- Include BottomSection layout -->
+    <include
+        android:id="@+id/bottomSection"
+        layout="@layout/bottom_section"/>
+
+</RelativeLayout>

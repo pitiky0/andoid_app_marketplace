@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.LoginActivity">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/toolbar"
+        android:src="@drawable/ic_custom_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        style="@style/LoginRegisterEditText"
+        android:hint="@string/username"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/LoginRegisterEditText"
+        android:hint="@string/password"
+        android:layout_below="@id/editTextUsername"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/LoginRegisterButton1"
+        android:text="@string/login"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_register"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:focusable="true" />
+
+    <!-- Include BottomSection layout -->
+    <include
+        android:id="@+id/bottomSection"
+        layout="@layout/bottom_section"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Default image placeholder (can be replaced with your app's default image) -->
+    <item android:drawable="@drawable/placeholder" />
+
+
+</layer-list>

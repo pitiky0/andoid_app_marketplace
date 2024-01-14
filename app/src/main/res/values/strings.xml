@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Marketplace</string>
+    <string name="product_image">Product Image</string>
+    <string name="add_to_cart">add To Cart</string>
+    <string name="search">Search...</string>
+    <string name="search_icon">Search Icon</string>
+    <string name="home_button">Home Button</string>
+    <string name="all_categories_button">All Categories Button</string>
+    <string name="login_register_button">Login Register Button</string>
+    <string name="shopping_cart_button">Shopping Cart Button</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="all_categories">All Categories</string>
+    <string name="username">Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="checkout">Checkout</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="total_price_100_00">Total Price: $100.00</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="address">Address</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

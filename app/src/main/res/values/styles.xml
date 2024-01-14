@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="RelativeLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="ItemImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/default_image</item>
+    </style>
+
+    <style name="ItemName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:text">Item Name</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItemFornisseur">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">Fornisseur Name</item>
+    </style>
+
+    <style name="ItemPrice">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">Item Price</item>
+    </style>
+
+    <style name="AddToCartButton">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/circular_button_background</item>
+        <item name="android:src">@drawable/ic_custom_shopping_cart</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/holo_orange_dark</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <style name="AppName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SearchEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/editTextBackground</item>
+        <item name="android:hint">@string/search</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/topSection</item>
+        <item name="android:background">@android:color/background_light</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="ImageButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="SearchIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:src">@drawable/ic_custom_search</item>
+        <item name="android:contentDescription">@string/search_icon</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="HomeButton" parent="ImageButtonStyle">
+        <item name="android:src">@drawable/ic_custom_home</item>
+        <item name="android:contentDescription">@string/home_button</item>
+    </style>
+
+    <style name="ShoppingCartButton" parent="ImageButtonStyle">
+        <item name="android:src">@drawable/ic_custom_shopping_cart</item>
+        <item name="android:contentDescription">@string/shopping_cart_button</item>
+    </style>
+
+    <style name="LoginRegisterButton" parent="ImageButtonStyle">
+        <item name="android:src">@drawable/ic_custom_login</item>
+        <item name="android:contentDescription">@string/login_register_button</item>
+    </style>
+
+    <style name="AllCategoriesButton" parent="ImageButtonStyle">
+        <item name="android:src">@drawable/ic_custom_all_categories</item>
+        <item name="android:contentDescription">@string/all_categories_button</item>
+    </style>
+
+    <style name="LoginRegisterEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="LoginRegisterButton1" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,27 @@
+<!-- Bottom Section -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <!-- Home Button with Custom Icon -->
+    <ImageButton
+        android:id="@+id/btnHome"
+        style="@style/HomeButton" />
+
+    <!-- Shopping Cart Button with Custom Icon -->
+    <ImageButton
+        android:id="@+id/btnShoppingCart"
+        style="@style/ShoppingCartButton" />
+
+    <!-- Account Button with Custom Icon -->
+    <ImageButton
+        android:id="@+id/btnAccount"
+        style="@style/LoginRegisterButton" />
+
+    <!-- All Categories Button with Custom Icon -->
+    <ImageButton
+        android:id="@+id/btnAllCategories"
+        style="@style/AllCategoriesButton" />
+</LinearLayout>

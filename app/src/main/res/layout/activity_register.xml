@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.RegisterActivity">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_custom_login" />
+
+    <!-- User Inputs -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        style="@style/LoginRegisterEditText"
+        android:hint="@string/username"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        style="@style/LoginRegisterEditText"
+        android:hint="@string/address"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/editTextUsername"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        style="@style/LoginRegisterEditText"
+        android:hint="@string/password"
+        android:layout_below="@id/editTextAddress"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextPasswordConfirmation"
+        style="@style/LoginRegisterEditText"
+        android:hint="@string/confirm_password"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword" />
+
+    <!-- User Type Selection -->
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        style="@style/LoginRegisterEditText"
+        android:layout_below="@id/editTextPasswordConfirmation"
+        android:layout_marginTop="8dp"
+        android:entries="@array/user_types"
+        android:spinnerMode="dropdown" />
+
+    <!-- Create Account Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        style="@style/LoginRegisterButton1"
+        android:layout_below="@id/spinnerUserType"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_account" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account_login"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:focusable="true" />
+
+    <!-- Include BottomSection layout -->
+    <include
+        android:id="@+id/bottomSection"
+        layout="@layout/bottom_section"/>
+
+</RelativeLayout>
